@@ -8,6 +8,7 @@ CREATE TABLE funcionario (
 	FOREIGN KEY (subordinado_fk) REFERENCES funcionario(cpf) ON DELETE SET NULL
 );
 
+
 INSERT INTO funcionario (cpf, nome_completo, departamento, email, telefone, subordinado_fk)
 VALUES ('111.111.111-11', 'Diogo Carvalho Ferreira', 'Presidência', 'diogocarva123@gmail.com', '+55 (11)992147487', NULL);
 
